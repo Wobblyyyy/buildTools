@@ -1,0 +1,10 @@
+<component name="ArtifactManager">
+  <artifact build-on-make="true" name="buildTools:jar">
+    <output-path>$USER_HOME$/Desktop/score</output-path>
+    <root id="root">
+      <element id="archive" name="buildTools.jar">
+        <element id="module-output" name="buildTools" />
+      </element>
+    </root>
+  </artifact>
+</component>
