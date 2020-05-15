@@ -2,6 +2,8 @@ package me.wobblyyyy.build;
 
 import java.io.File;
 import java.io.IOException;
+import java.io.OutputStream;
+import java.io.PrintStream;
 import java.text.SimpleDateFormat;
 import java.util.Arrays;
 import java.util.Date;
@@ -16,6 +18,15 @@ public class Main
         Arrays.sort(FileInterface.files);
 
         List<String> argumentsAsList = Arrays.asList(arguments);
+
+        if (argumentsAsList.contains("-silent")) System.setOut(new PrintStream(new OutputStream()
+        {
+            @Override
+            public void write (int i) throws IOException
+            {
+
+            }
+        }));
 
         new File(FileInterface.dir + File.separator + "min").mkdirs();
 
