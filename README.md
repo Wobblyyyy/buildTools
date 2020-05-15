@@ -8,3 +8,4 @@ Run the build tools in the same directory as the rest of the score.js files / fo
 There are a couple available flags, including...
 - `-current` : update a file named score.js instead of creating a new one
 - `-qb` or `-nomin` : forgo the online minification process
+- `-silent` : disable logging on-run of command
